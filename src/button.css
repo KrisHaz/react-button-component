@@ -1,0 +1,224 @@
+.buttonText {
+  font-size: 16px;
+  line-height: 50%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.buttonDefault {
+  font-weight: 500;
+  padding: 15px 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  max-width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buttonDefault:active {
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+  opacity: 0.6;
+}
+
+.buttonDefault:hover {
+  cursor: pointer;
+  color: rgb(87, 85, 85);
+}
+
+.buttonDefault:focus {
+  border-color: black;
+}
+
+.buttonDisabled {
+  text-transform: uppercase;
+  max-width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 15px 40px;
+  opacity: 0.3;
+  outline: none;
+  color: rgb(87, 85, 85);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+.buttonDisabled:hover {
+  cursor: url("../public/cursor.png"), not-allowed;
+}
+
+
+.buttonLoadingPrimary {
+  cursor: wait;
+  max-width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    -90deg,
+    #52eed9,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #52eed9
+  );
+  background-size: 400% 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  margin: 0;
+  animation: Gradient 4s ease infinite;
+  text-decoration: none;
+}
+
+@keyframes Gradient {
+  50% {
+    background-position: 140% 50%;
+    transform: skew(-2deg);
+  }
+}
+
+.buttonLoadingPrimary::after {
+  content: "";
+  position: absolute;
+  background-size: inherit;
+  background-image: inherit;
+  animation: inherit;
+  left: 0px;
+  right: 0px;
+  top: 2px;
+  height: 100%;
+  filter: blur(2rem);
+}
+
+.buttonLoadingSecondary {
+  cursor: wait;
+  max-width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    -90deg,
+    #eede52,
+    #e73c7e,
+    #23a6d5,
+    #3ed523,
+    #bfee52
+  );
+  background-size: 400% 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  margin: 0;
+  animation: Gradient 4s ease infinite;
+  text-decoration: none;
+}
+
+@keyframes Gradient {
+  50% {
+    background-position: 140% 50%;
+    transform: skew(-2deg);
+  }
+}
+
+.buttonLoadingSecondary::after {
+  content: "";
+  position: absolute;
+  background-size: inherit;
+  background-image: inherit;
+  animation: inherit;
+  left: 0px;
+  right: 0px;
+  top: 2px;
+  height: 100%;
+  filter: blur(2rem);
+}
+
+.buttonLoadingTertiary {
+  cursor: wait;
+  max-width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+    -90deg,
+    #ffffff,
+    #000000,
+    #959595,
+    #ffffff,
+    #ffffff
+  );
+  background-size: 400% 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  margin: 0;
+  animation: Gradient 4s ease infinite;
+  text-decoration: none;
+}
+
+@keyframes Gradient {
+  50% {
+    background-position: 140% 50%;
+    transform: skew(-2deg);
+  }
+}
+
+.buttonLoadingTertiary::after {
+  content: "";
+  position: absolute;
+  background-size: inherit;
+  background-image: inherit;
+  animation: inherit;
+  left: 0px;
+  right: 0px;
+  top: 2px;
+  height: 100%;
+  filter: blur(2rem);
+}
+
+
+
+img {
+  width: 7%;
+  height: 7%;
+  position: relative;
+  left: 7%;
+  vertical-align: middle;
+}
+
+.primary {
+  background-color: rgb(68, 207, 203);
+}
+
+.secondary {
+  background-color: rgb(23, 238, 15);
+}
+
+.tertiary {
+  color: rgb(87, 85, 85);
+}
+
+.tertiary:hover {
+  color: black;
+}
+

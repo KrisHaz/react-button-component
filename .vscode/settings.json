@@ -1,0 +1,10 @@
+{
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "debug.enableAllHovers": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript", "typescriptreact", "javascript"]
+
+}
+
